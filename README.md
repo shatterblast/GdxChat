@@ -9,6 +9,11 @@
 - Implement full text search feature
 - Implement full text chat feature
 
+## TODO
+
+- IOS
+- Desktop
+
 ## Meta
 
 Chaomao – [@Twitter](https://twitter.com/ChaomaoApps) – chaomao.help@gmail.com
