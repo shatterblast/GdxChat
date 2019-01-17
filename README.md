@@ -1,6 +1,9 @@
 # GdxChat
 > Example demonstrates how to implement a full edit text and text view (with multilanguage, icon) in a libgdx project.
 
+<img src="screenshot.png" width="360">
+
+
 ## Usage example
 
 - Implement full text search feature
