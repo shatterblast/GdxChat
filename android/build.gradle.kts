@@ -8,13 +8,13 @@ plugins {
 val natives by configurations.creating
 
 android {
-    compileSdkVersion(28)
-    buildToolsVersion("28.0.3")
+    compileSdkVersion(Versions.compileSdk)
+    buildToolsVersion(Versions.buildTools)
 
     defaultConfig {
         applicationId = "com.chaomao.lala"
-        minSdkVersion(15)
-        targetSdkVersion(28)
+        minSdkVersion(Versions.minSdk)
+        targetSdkVersion(Versions.targetSdk)
         versionCode = 5
         versionName = "1.0.0"
     }
@@ -58,20 +58,19 @@ kapt {
 
 configurations.all {
     resolutionStrategy {
-        force("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlinVersion"]}")
+        force("org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}")
     }
 }
 
 dependencies {
     implementation(project(":core"))
-    implementation("com.badlogicgames.gdx:gdx-backend-android:${rootProject.extra["gdxVersion"]}")
-
-    natives("com.badlogicgames.gdx:gdx-platform:${rootProject.extra["gdxVersion"]}:natives-armeabi")
-    natives("com.badlogicgames.gdx:gdx-platform:${rootProject.extra["gdxVersion"]}:natives-armeabi-v7a")
-    natives("com.badlogicgames.gdx:gdx-platform:${rootProject.extra["gdxVersion"]}:natives-arm64-v8a")
-    natives("com.badlogicgames.gdx:gdx-platform:${rootProject.extra["gdxVersion"]}:natives-x86")
-    natives("com.badlogicgames.gdx:gdx-platform:${rootProject.extra["gdxVersion"]}:natives-x86_64")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlinVersion"]}")
+    implementation(Depends.Gdx.android)
+    natives(Depends.Gdx.nativesArmeabi)
+    natives(Depends.Gdx.nativesArmeabiV7a)
+    natives(Depends.Gdx.nativesArm64V8a)
+    natives(Depends.Gdx.nativesX86)
+    natives(Depends.Gdx.nativesX86_64)
+    implementation(Depends.Kotlin.stdlib)
 }
 
 task("copyAndroidNatives") {

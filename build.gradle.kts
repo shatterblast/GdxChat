@@ -1,15 +1,12 @@
 buildscript {
-    extra["gdxVersion"] = "1.9.9"
-    extra["kotlinVersion"] = "1.3.11"
-
     repositories {
         jcenter()
         google()
         maven(url = "http://dl.bintray.com/kotlin/kotlin-eap")
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:3.3.0")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${extra["kotlinVersion"]}")
+        classpath("com.android.tools.build:gradle:${Versions.gradleBuildTool}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
     }
 }
 

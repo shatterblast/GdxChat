@@ -7,6 +7,6 @@ java {
 }
 
 dependencies {
-    implementation("com.badlogicgames.gdx:gdx:${rootProject.extra["gdxVersion"]}")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlinVersion"]}")
+    implementation(Depends.Gdx.core)
+    implementation(Depends.Kotlin.stdlib)
 }
