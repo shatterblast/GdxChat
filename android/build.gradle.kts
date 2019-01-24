@@ -15,8 +15,8 @@ android {
         applicationId = "com.chaomao.lala"
         minSdkVersion(Versions.minSdk)
         targetSdkVersion(Versions.targetSdk)
-        versionCode = 5
-        versionName = "1.0.0"
+        versionCode = Versions.androidVersionCode
+        versionName = Versions.versionName
     }
 
     sourceSets {

@@ -11,7 +11,7 @@ buildscript {
 }
 
 allprojects {
-    version = "1.0"
+    version = Versions.versionName
     repositories {
         jcenter()
         maven(url = "https://jitpack.io")
