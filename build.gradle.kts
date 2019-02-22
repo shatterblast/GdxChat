@@ -7,6 +7,7 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:${Versions.gradleBuildTool}")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
+        classpath("com.mobidevelop.robovm:robovm-gradle-plugin:2.3.5")
     }
 }
 

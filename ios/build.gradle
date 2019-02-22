@@ -1,0 +1,30 @@
+apply plugin: "kotlin"
+apply plugin: "robovm"
+
+dependencies {
+    implementation project(":core")
+    implementation "com.mobidevelop.robovm:robovm-rt:2.3.5"
+    implementation "com.mobidevelop.robovm:robovm-cocoatouch:2.3.5"
+    implementation "com.badlogicgames.gdx:gdx-backend-robovm:1.9.9"
+    implementation "com.badlogicgames.gdx:gdx-platform:1.9.9:natives-ios"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.3.21"
+}
+
+sourceSets.main.java.srcDirs = ["src/"]
+
+sourceCompatibility = '1.7'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+ext {
+    mainClassName = "com.mygdx.game.IOSLauncher"
+}
+
+launchIPhoneSimulator.dependsOn build
+launchIPadSimulator.dependsOn build
+launchIOSDevice.dependsOn build
+createIPA.dependsOn build
+
+robovm {
+    iosSkipSigning = true
+    archs = "thumbv7:arm64"
+}
