@@ -8,4 +8,5 @@ object Versions {
     const val gradleBuildTool = "3.3.1"
     const val kotlin = "1.3.21"
     const val gdx = "1.9.9"
+    const val roboVM = "2.3.5"
 }
