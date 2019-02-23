@@ -8,16 +8,11 @@ java {
 }
 dependencies {
     implementation(project(":core"))
-    implementation("com.mobidevelop.robovm:robovm-rt:2.3.5")
-    implementation("com.mobidevelop.robovm:robovm-cocoatouch:2.3.5")
-    implementation("com.badlogicgames.gdx:gdx-backend-robovm:1.9.9")
-    implementation("com.badlogicgames.gdx:gdx-platform:1.9.9:natives-ios")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.3.21")
-    //    implementation(Depends.Gdx.roboVMRT)
-//    implementation(Depends.Gdx.roboVMCocoatouch)
-//    implementation(Depends.Gdx.ios)
-//    implementation(Depends.Gdx.iosNatives)
-//    implementation(Depends.Kotlin.stdlib)
+    implementation(Depends.Gdx.roboVMRT)
+    implementation(Depends.Gdx.roboVMCocoatouch)
+    implementation(Depends.Gdx.ios)
+    implementation(Depends.Gdx.iosNatives)
+    implementation(Depends.Kotlin.stdlib)
 }
 
 ext {
