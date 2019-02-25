@@ -17,6 +17,7 @@ dependencies {
 
 ext {
     set("mainClassName", "com.chaomao.lala.IOSLauncher")
+    set("executable", "GdxChat")
 }
 
 tasks.getByName("launchIPhoneSimulator") {
