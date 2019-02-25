@@ -33,11 +33,13 @@ android {
 
     buildTypes {
         getByName("release") {
+            signingConfig = null
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             isShrinkResources = true
         }
         getByName("debug") {
+            signingConfig = null
             isMinifyEnabled = false
         }
     }
