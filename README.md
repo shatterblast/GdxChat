@@ -3,6 +3,19 @@
 
 <img src="screenshot.png" width="360"> <img src="animated.gif" width="360">
 
+
+## Status
+|   | Build |
+|---|:-----:|
+|**Android**|[![Build][android-build-badge]][android-build]| 
+|**iOS**|[![Build][iOS-build-badge]][iOS-build]| 
+
+[android-build-badge]: https://dev.azure.com/mseng/PipelineTools/_apis/build/status/azure-pipelines-tasks.ci-windows
+[android-build]: https://dev.azure.com/mseng/PipelineTools/_build/latest?definitionId=7634
+
+[iOS-build-badge]: https://dev.azure.com/mseng/PipelineTools/_apis/build/status/azure-pipelines-tasks.ci-macos
+[iOS-build]: https://dev.azure.com/mseng/PipelineTools/_build/latest?definitionId=7635
+
 ## Usage example
 
 - Implement full text search feature
