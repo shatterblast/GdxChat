@@ -1,20 +1,9 @@
 # GdxChat
+[![Build Status](https://dev.azure.com/admin0742/TestPipeLine1/_apis/build/status/TestPipeLine1?branchName=master)](https://dev.azure.com/admin0742/TestPipeLine1/_build/latest?definitionId=5&branchName=master)
+
 > Example demonstrates how to implement a full edit text and text view (with multilanguage, icon) in a libgdx project.
 
 <img src="screenshot.png" width="360"> <img src="animated.gif" width="360">
-
-
-## Status
-|   | Build |
-|---|:-----:|
-|**Android**|[![Build][android-build-badge]][android-build]| 
-|**iOS**|[![Build][iOS-build-badge]][iOS-build]| 
-
-[android-build-badge]: https://dev.azure.com/mseng/PipelineTools/_apis/build/status/azure-pipelines-tasks.ci-windows
-[android-build]: https://dev.azure.com/mseng/PipelineTools/_build/latest?definitionId=7634
-
-[iOS-build-badge]: https://dev.azure.com/mseng/PipelineTools/_apis/build/status/azure-pipelines-tasks.ci-macos
-[iOS-build]: https://dev.azure.com/mseng/PipelineTools/_build/latest?definitionId=7635
 
 ## Usage example
 
