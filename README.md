@@ -13,7 +13,6 @@
 ## TODO
 
 - IOS
-- Desktop
 
 ## Meta
 
